@@ -1,18 +1,9 @@
 import React, {Component} from 'react';
 import * as Animatable from 'react-native-animatable';
-import {
-  Text,
-  View,
-  ScrollView,
-  Alert,
-  StyleSheet,
-  TouchableOpacity,
-  ImageBackground,
-} from 'react-native';
+import {ScrollView, Alert} from 'react-native';
 import {connect} from 'react-redux';
 import {signIn} from '../../../actions/auth';
 import {InputApp, ButtonApp, AuthHeader} from '../../components';
-import {COLOR} from '../../constant/color';
 
 class Login extends Component {
   constructor(props) {
@@ -184,33 +175,3 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
-
-const styles = StyleSheet.create({
-  connect: {
-    marginTop: 15,
-    marginBottom: 5,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  connectText: {
-    fontSize: 17,
-    backgroundColor: 'white',
-    justifyContent: 'center',
-    alignItems: 'center',
-    opacity: 0.4,
-  },
-  socialContainer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  forgetPass: {
-    marginLeft: 50,
-    marginTop: 5,
-  },
-  forgetPassText: {
-    color: COLOR.main,
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
-});

@@ -8,7 +8,7 @@ import {
   TextInput,
 } from 'react-native';
 
-export default function SearchPage({item, navigation}) {
+export default function SearchPage() {
   const [search, setSearch] = useState('');
   const [filteredDataSource, setFilteredDataSource] = useState([]);
   const [masterDataSource, setMasterDataSource] = useState([]);

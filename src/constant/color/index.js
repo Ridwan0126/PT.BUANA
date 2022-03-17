@@ -5,4 +5,3 @@ export const COLOR = {
   orange: 'orange',
   red: 'red',
 };
-//00716F

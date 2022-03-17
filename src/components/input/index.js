@@ -57,14 +57,7 @@ class InputApp extends Component {
             color: COLOR.main,
             backgroundColor: '#ffffff',
           }}
-          leftIcon={
-            <Icon
-              // name='mail'
-              name={icon}
-              size={20}
-              color={COLOR.main}
-            />
-          }
+          leftIcon={<Icon name={icon} size={20} color={COLOR.main} />}
           rightIcon={
             label === 'Password' || label === 'Confirm' ? (
               visible ? (

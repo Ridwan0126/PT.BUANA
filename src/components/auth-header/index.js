@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   container: {
-    // height: 220,
     flex: 1,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
@@ -96,7 +95,6 @@ const styles = StyleSheet.create({
     flex: 1.6,
     height: 250,
     flexDirection: 'column',
-    // alignItems:'center',
     justifyContent: 'flex-end',
     paddingHorizontal: 28.8,
     paddingBottom: 80,
